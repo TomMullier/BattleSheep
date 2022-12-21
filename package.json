@@ -1,0 +1,36 @@
+{
+  "name": "battlesheep",
+  "version": "1.0.0",
+  "description": "BattleSheep Game, shoot the sheeps to win",
+  "main": "index.js",
+  "scripts": {
+    "docker-start": "docker-compose up -d && docker logs -f battlesheep_app_1",
+    "docker-stop": "docker-compose down",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zephyr-Quest/BattleSheep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zephyr-Quest/BattleSheep/issues"
+  },
+  "homepage": "https://github.com/Zephyr-Quest/BattleSheep#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "express-socket.io-session": "^1.3.5",
+    "express-validator": "^6.14.0",
+    "jshint": "^2.13.4",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "socket.io": "^4.4.1"
+  }
+}
